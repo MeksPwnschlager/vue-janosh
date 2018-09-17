@@ -1,5 +1,5 @@
 {
-  "name": "@meks/vue-janosh",
+  "name": "vue-janosh",
   "description": "Vue.js wrapper for janosh.js",
   "author": {
     "name": "MeksPwnschlager",
