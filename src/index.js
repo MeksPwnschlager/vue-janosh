@@ -1,18 +1,9 @@
 var Janosh = require('janosh.js')
 
-export default function () {
-  return function install (Vue, options) {
-    console.log(Janosh)
+export default {
+  install (Vue, options) {
     var janosh = new Janosh(options.socketUri)
-
     Vue.janosh = janosh
-
-    Object.defineProperties(Vue.prototype, {
-      $janosh: {
-        get: function () {
-          return janosh
-        }
-      }
-    })
+    Object.defineProperty(Vue.prototype, '$janosh', { value: janosh })
   }
 }
