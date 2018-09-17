@@ -1,16 +1,16 @@
 {
-  "name": "@MeksPwnschlager/vue-janosh",
+  "name": "@meks/vue-janosh",
   "description": "Vue.js wrapper for janosh.js",
   "author": {
     "name": "MeksPwnschlager",
-    "username": "MeksPwnschlager",
+    "username": "meks",
     "email": "comms@meks.io"
   },
   "main": "src/index.js",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "none"
+    "url": "https://github.com/MeksPwnschlager/vue-janosh"
   },
   "licenses": "AGPL",
   "devDependencies": {

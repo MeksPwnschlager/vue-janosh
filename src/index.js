@@ -1,19 +1,18 @@
-var Janosh = require('janosh.js');
+var Janosh = require('janosh.js')
 
-module.exports = (function () {
+export default function () {
+  return function install (Vue, options) {
+    console.log(Janosh)
+    var janosh = new Janosh(options.socketUri)
 
-    return function install(Vue, options) {
+    Vue.janosh = janosh
 
-        var janosh = new Janosh(options.socketUri);  
-    
-        Vue.janosh = janosh;
-
-        Object.defineProperties(Vue.prototype, {
-            $janosh: {
-                get: function () {
-                    return janosh;
-                }
-            }
-        });
-    }
-})();
+    Object.defineProperties(Vue.prototype, {
+      $janosh: {
+        get: function () {
+          return janosh
+        }
+      }
+    })
+  }
+}
